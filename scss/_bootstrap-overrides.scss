@@ -33,3 +33,9 @@
 .panel-body {
   font-family: sans-serif;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 200px;    /* Set slide height here */ 
+
+}

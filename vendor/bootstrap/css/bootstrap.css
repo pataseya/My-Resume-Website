@@ -482,6 +482,8 @@ mark,
   height: auto;
 }
 
+
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -5767,16 +5769,22 @@ button.close {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 200px;    /* Set slide height here */ 
+
+}
+
 
 .carousel-item {
   position: relative;
   display: none;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
@@ -7518,7 +7526,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .ml-5,
